@@ -22,6 +22,9 @@ for {
 	fmt.Scan(&email)
 	fmt.Println("Enter number of tickets")
 	fmt.Scan(&numberOfTickets)
+	if(numberOfTickets<remainigTickets){
+	
+	
 	remainigTickets = remainigTickets- numberOfTickets
 	fmt.Printf("thank you %v %v for booking %v tickets, and now we have, %v remaining for you. you will receive email on %v\n", firstName,lastName,  numberOfTickets,remainigTickets,  email)
 	fmt.Printf("The whole value %v \n", bookings)
@@ -33,12 +36,16 @@ for _, booking := range bookings{
 	firstNames = append(firstNames,list[0])
 
 }
-if remainigTickets<=0{
-	fmt.Println("you finished it all")
-	break
-}
 fmt.Printf("The first element %v \n", firstNames)
 fmt.Printf("The length of the array %v \n", len(bookings))
+} else if numberOfTickets == remainigTickets{
+	fmt.Println("you entered the exact so you finished ok man")
+
+	break
+} else {
+	fmt.Println("what do you enter bra")
+}
+
 }
 
 }
