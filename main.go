@@ -43,7 +43,7 @@ fmt.Printf("The length of the array %v \n", len(bookings))
 
 	break
 } else {
-	fmt.Println("error")
+	fmt.Println("error on the loop")
 }
 
 }
